@@ -49,6 +49,11 @@
 			<description>This sets the probability of any of the various user set divisions being chosen rather than the basic just the underlying pulse. </description>
 		</method>
 
+		<method name='dump'>
+			<digest>This outputs a list of all of the current settings out the fourth outlet</digest>
+			<description>This outputs a list of all of the current settings out the fourth outlet. </description>
+		</method>
+
 	</methodlist>
 
 

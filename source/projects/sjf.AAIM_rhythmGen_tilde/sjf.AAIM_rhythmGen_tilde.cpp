@@ -21,7 +21,8 @@ public:
 //    outlet<> output	{ this, "(anything) output the message which is posted to the max console" };
     outlet<>    out1  { this, "(signal) rhythm gen phase ramps", "signal" };
     outlet<>    out2  { this, "(signal) velocity: 0 --> 1", "signal" };
-    outlet<>    out3  { this, "(signal) rests: 1 if rest", "signal" };
+    outlet<>    out3  { this, "(signal) rests: 0 if rest", "signal" };
+    outlet<>    dumpOut  { this, "(anything) dump: outputs a list of all current settings"};
 //    outlet<thread_check::scheduler, thread_action::fifo> output_false    { this, "(bang) input is zero" };
 
     
@@ -73,12 +74,44 @@ public:
         }
     };
     
+    message<> dump  {this, "dump", "This outputs a list of all of the current settings out the fourth outlet.",
+        MIN_FUNCTION {
+            auto outString = std::string{};
+//            auto nBeats = m_rGen.getNumBeats;
+            outString = "nBeats " + std::to_string( m_rGen.getNumBeats() );
+            dumpOut.send( outString );
+
+            outString = "Complexity " + std::to_string( m_rGen.getComplexity() );
+            dumpOut.send( outString );
+
+            outString = "Rests " + std::to_string( m_rGen.getRests() );
+            dumpOut.send( outString );
+            
+            auto ioiProbs = m_rGen.getIOIProbabilities( );
+            for ( size_t i = 0; i < ioiProbs.size(); i++ )
+            {
+                outString = "ioiProbs ";
+                for ( size_t j = 0; j < ioiLabels.size(); j++ )
+                        outString += ioiLabels[ j ] + " " + std::to_string(ioiProbs[ i ][ j ]) + " ";
+                dumpOut.send( outString );
+            }
+            
+            outString = "baseIndispensibility ";
+            auto bInd = m_rGen.getBaseIndispensibility();
+            for ( size_t i = 0; i <  bInd.size(); i++ )
+            {
+                outString += std::to_string(bInd[ i ]) + " ";
+            }
+            dumpOut.send( outString );
+            return {};
+        }
+    };
+    
     //============================================================
 private:
     void printIOIs()
     {
         auto ioiProbs = m_rGen.getIOIProbabilities( );
-        auto ioiLabels = std::array< std::string, 4 >{ "division", "probability", "repetitions", "baseIOIs" };
         for ( size_t i = 0; i < ioiProbs.size(); i++ )
         {
             cout << "ioiProbs: ";
@@ -104,7 +137,7 @@ private:
     
     
     AAIM_rhythmGen m_rGen;
-//    float base, ioi, current;
+    std::array< std::string, 4 > ioiLabels{ "division", "probability", "repetitions", "baseIOIs" };
 };
 
 

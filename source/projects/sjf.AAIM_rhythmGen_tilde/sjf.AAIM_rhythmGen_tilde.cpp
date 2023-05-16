@@ -4,7 +4,7 @@
 ///	@license	Use of this source code is governed by the MIT License found in the License.md file.
 
 #include "c74_min.h"
-#include "../sjf_AAIM/sjf_AAIM_rhythmGen.h"
+#include "../../../sjf_AAIMCplusplus/sjf_AAIM_rhythmGen.h"
 
 using namespace c74::min;
 

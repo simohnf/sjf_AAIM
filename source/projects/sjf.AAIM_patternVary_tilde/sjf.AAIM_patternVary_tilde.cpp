@@ -23,11 +23,14 @@ public:
 
     
     samples<2> operator()( sample currentBeat, sample triggerRamp ) {
+        auto trig = 0.0f;
+        if ( triggerRamp < (m_lastTriggerInput * 0.5) )
+            if ( m_pVary.triggerBeat( currentBeat ) )
+                trig = 1.0f;
+//        auto output = ( triggerRamp < (m_lastTriggerInput * 0.5) ) && m_pVary.triggerBeat( currentBeat ) ? 1.0f : 0.0f;
+        m_lastTriggerInput = triggerRamp;
+        return { trig };
         
-        if ( triggerRamp > m_lastTriggerInput * 0.5 )
-            return { 0.0f };
-        auto output = m_pVary.triggerBeat( currentBeat ) ? 1.0f : 0.0f;
-        return { output };
     }
 
     // post to max window == but only when the class is loaded the first time
@@ -60,6 +63,7 @@ public:
     message<> nBeats  {this, "nBeats", "This sets the number of beats in the pattern, this defaults to 8.",
         MIN_FUNCTION {
             m_pVary.setNumBeats( args[ 0 ] );
+            cout << "nBeats " << m_pVary.getNumBeats() << endl;
 //            printBeatsAndIndis();
             return {};
         }
@@ -67,8 +71,9 @@ public:
     
     message<> setBeat  {this, "setBeat", "This sets the state one of the beats in the pattern. e.g. [setBeat 0 1] sets the first beat on, [setBeat 3 0] sets the fouth beat off, etc.",
         MIN_FUNCTION {
-            auto beatOn = ((float)args[ 1 ]>0.0f) ? true : false;
-            m_pVary.setBeat( args[ 0 ], beatOn);
+            cout << "beat " << args[ 0 ] << " " << args[ 1 ] << endl;
+            auto beatOn = ((float)args[ 1 ] > 0.5f) ? true : false;
+            m_pVary.setBeat( args[ 0 ], beatOn );
 //            printIOIs();
             return {};
         }

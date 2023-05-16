@@ -14,7 +14,7 @@ public:
     MIN_DESCRIPTION	{"Generate rhythmic variations on basic phase ramp."};
     MIN_TAGS		{"algorithmic music"};
     MIN_AUTHOR		{"sjf"};
-    MIN_RELATED		{"phasor~"};
+    MIN_RELATED		{"phasor~, sjf.AAIM_patternVary~"};
 
 //    inlet<>  input	{ this, "(bang) post greeting to the max console" };
     inlet<>     in1   { this, "(signal) phase ramp input" };
@@ -97,7 +97,7 @@ public:
             }
             
             outString = "baseIndispensibility ";
-            auto bInd = m_rGen.getBaseIndispensibility();
+            auto bInd = m_rGen.getBaseindispensability();
             for ( size_t i = 0; i <  bInd.size(); i++ )
             {
                 outString += std::to_string(bInd[ i ]) + " ";
@@ -126,7 +126,7 @@ private:
     {
         cout << "nBeats " << m_rGen.getNumBeats( ) << endl;
         cout << "baseIndis ";
-        auto bInd = m_rGen.getBaseIndispensibility();
+        auto bInd = m_rGen.getBaseindispensability();
         for ( size_t i = 0; i <  bInd.size(); i++ )
         {
             cout << bInd[ i ] << " ";

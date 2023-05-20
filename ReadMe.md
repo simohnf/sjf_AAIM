@@ -48,3 +48,11 @@ cd into the build folder
 ``` 
 cd build
 ```
+On Mac first build the XCode file
+```
+cmake -G Xcode ..
+```
+Then build the project
+```
+cmake --build . --config Release 
+```

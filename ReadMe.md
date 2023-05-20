@@ -27,8 +27,16 @@ For support, please contact the developer of this package.
 ---------------------------------
 
 # sjf_AAIM
-To download:
+To download and build:
 Open terminal and cd to the Max8 Packages folder
 ```
 cd ~/Documents/Max\ 8/Packages
+```
+The clone the repository (use recursive to ensure it downloads all of the  submodules correctly)
+```
+git clone https://github.com/simohnf/sjf_AAIM --recursive
+```
+Then cd into the folder
+```
+cd sjf_AAIM
 ```

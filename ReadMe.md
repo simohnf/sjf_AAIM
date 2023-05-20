@@ -14,9 +14,6 @@ To code your own objects, or to re-compile existing objects, you will need a com
 
 You will also need the Min-DevKit, available from the Package Manager inside of Max or [directly from Github](https://github.com/Cycling74/min-devkit).
 
-
-
-
 ## Contributors / Acknowledgements
 
 The sjf_AAIM is the work of some amazing and creative artists, researchers, and coders.
@@ -27,3 +24,6 @@ The sjf_AAIM is the work of some amazing and creative artists, researchers, and 
 
 For support, please contact the developer of this package.
 # sjf_AAIM
+To download:
+Open terminal and cd to the Max8 Packages folder
+cd ~/Documents/Max\ 8/Packages

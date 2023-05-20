@@ -1,4 +1,7 @@
 # sjf_AAIM
+
+AAIM (Algorithmically Assisted Improvised Music) a package of MaxMsp objects to stochastically generate variations of user defined patterns 
+
 More information on this project can be found [here](https://simohnf.github.io./AAIM/)
 
 ### To download and build:

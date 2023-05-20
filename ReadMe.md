@@ -26,4 +26,6 @@ For support, please contact the developer of this package.
 # sjf_AAIM
 To download:
 Open terminal and cd to the Max8 Packages folder
+```
 cd ~/Documents/Max\ 8/Packages
+```

@@ -13,7 +13,7 @@ The clone the repository (use recursive to ensure it downloads all of the  submo
 ```
 git clone https://github.com/simohnf/sjf_AAIM --recursive
 ```
-Then cd into the folder
+(Hopefully the objects already work, buit to rebuild complete the following steps) Then cd into the folder
 ```
 cd sjf_AAIM
 ```

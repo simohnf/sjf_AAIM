@@ -40,3 +40,11 @@ Then cd into the folder
 ```
 cd sjf_AAIM
 ```
+Then create the build folder
+```
+mkdir build
+```
+cd into the build folder
+``` 
+cd build
+```

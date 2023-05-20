@@ -6,8 +6,8 @@
 
 <c74object name='sjf.AAIM_rhythmGen~' category='algorithmic music'>
 
-	<digest>Generate rhythmic variations on basic phase ramp</digest>
-	<description>Generate rhythmic variations on basic phase ramp. </description>
+	<digest>Stochastically generated rhythmic variations on basic phase ramp</digest>
+	<description>Stochastically generated rhythmic variations on basic phase ramp. </description>
 
 
 	<!--METADATA-->
@@ -44,6 +44,11 @@
 			<description>This sets the probability of rests being inserted into the pattern, these rests are output from the third inlet to allow different processing. </description>
 		</method>
 
+		<method name='clearProbs'>
+			<digest>This will clear and reset the list of IOI probabilities </digest>
+			<description>This will clear and reset the list of IOI probabilities </description>
+		</method>
+
 		<method name='complexity'>
 			<digest>This sets the probability of any of the various user set divisions being chosen rather than the basic just the underlying pulse</digest>
 			<description>This sets the probability of any of the various user set divisions being chosen rather than the basic just the underlying pulse. </description>
@@ -68,6 +73,7 @@
 
 	<seealsolist>
 		<seealso name='phasor~' />
+		<seealso name='sjf.AAIM_patternVary~' />
 	</seealsolist>
 
 

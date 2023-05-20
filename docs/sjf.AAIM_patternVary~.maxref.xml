@@ -6,8 +6,8 @@
 
 <c74object name='sjf.AAIM_patternVary~' category='algorithmic music'>
 
-	<digest>Generate variations on a given pattern</digest>
-	<description>Generate variations on a given pattern. </description>
+	<digest>Stochastically generated variations on a given pattern of triggers</digest>
+	<description>Stochastically generated variations on a given pattern of triggers. </description>
 
 
 	<!--METADATA-->
@@ -28,6 +28,11 @@
 	<!--MESSAGES-->
 
 	<methodlist>
+
+		<method name='dump'>
+			<digest>This outputs a list of all of the current settings out the fourth outlet</digest>
+			<description>This outputs a list of all of the current settings out the fourth outlet. </description>
+		</method>
 
 		<method name='setBeat'>
 			<digest>This sets the state one of the beats in the pattern</digest>

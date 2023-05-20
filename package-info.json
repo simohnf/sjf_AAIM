@@ -1,0 +1,24 @@
+{
+	"author" : "Simon Fay",
+	"description" : "AAIM (Algorithmically Assisted Improvised Music) a package of MaxMsp objects to stochastically generate variations of user defined patterns.",
+	"homepatcher" : "sjf.AAIM_drumMachine~.maxpat",
+	"max_version_min" : "8.0", "max_version_max" : "none",
+	"name" : "sjf_AAIM",
+	"os" : {
+		"macintosh" : {
+			"platform" : [ "x64", "aarch64" ],
+			"min_version" : "none"
+		},
+		"windows" : {
+			"platform" : [ "x64" ],
+			"min_version" : "none"
+		}
+	},
+	"package_extra" : {
+		"reverse_domain" : "com.cycling74",
+		"copyright" : "Copyright (c) 2023 Simon Fay"
+	},
+	"tags" : ["algorithmic music", "generative", "sequencing", "generation", "computer-aided composition", "computer-aided performance", "improvisation", "stochastic", "random", "probability"],
+	"version" : "1.0.0",
+    "website" : "https://simohnf.github.io./AAIM"
+}

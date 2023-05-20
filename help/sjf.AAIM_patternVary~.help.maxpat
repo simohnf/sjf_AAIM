@@ -41,6 +41,7 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-10",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -696,7 +697,7 @@
 									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "sjf.AAIM_rhythmGenControls.maxpat",
-									"numinlets" : 0,
+									"numinlets" : 1,
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "" ],
@@ -1206,16 +1207,16 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "sjf.AAIM_PatternVaryPoly~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/sjf_AAIM/externals/extras",
-				"patcherrelativepath" : "../externals/extras",
+				"name" : "sjf.AAIM_drumMachine~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/sjf_AAIM/help/extras",
+				"patcherrelativepath" : "./extras",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sjf.AAIM_drumMachine~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/sjf_AAIM/externals/extras",
-				"patcherrelativepath" : "../externals/extras",
+				"name" : "sjf.AAIM_drummerMultiVoice~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/sjf_AAIM/help/extras",
+				"patcherrelativepath" : "./extras",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1225,8 +1226,8 @@
 			}
 , 			{
 				"name" : "sjf.AAIM_rhythmGenControls.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/sjf_AAIM/externals/extras",
-				"patcherrelativepath" : "../externals/extras",
+				"bootpath" : "~/Documents/Max 8/Packages/sjf_AAIM/help/extras",
+				"patcherrelativepath" : "./extras",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1236,15 +1237,15 @@
 			}
 , 			{
 				"name" : "sjf.conductor~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/sjf_AAIM/externals/extras",
-				"patcherrelativepath" : "../externals/extras",
+				"bootpath" : "~/Documents/Max 8/Packages/sjf_AAIM/help/extras",
+				"patcherrelativepath" : "./extras",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sjf.sampler~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/sjf_AAIM/externals/extras",
-				"patcherrelativepath" : "../externals/extras",
+				"bootpath" : "~/Documents/Max 8/Packages/sjf_AAIM/help/extras",
+				"patcherrelativepath" : "./extras",
 				"type" : "JSON",
 				"implicit" : 1
 			}

@@ -19,6 +19,6 @@
 		"copyright" : "Copyright (c) 2023 Simon Fay"
 	},
 	"tags" : ["algorithmic music", "generative", "sequencing", "generation", "computer-aided composition", "computer-aided performance", "improvisation", "stochastic", "random", "probability"],
-	"version" : "1.0.0",
+	"version" : "0.0.1",
     "website" : "https://simohnf.github.io./AAIM"
 }

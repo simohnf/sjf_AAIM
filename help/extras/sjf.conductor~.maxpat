@@ -90,7 +90,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "denominator",
 					"hidden" : 1,
 					"id" : "obj-4",
 					"index" : 0,
@@ -104,7 +104,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "nBeats",
 					"hidden" : 1,
 					"id" : "obj-3",
 					"index" : 0,
@@ -118,7 +118,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "bpm",
 					"hidden" : 1,
 					"id" : "obj-2",
 					"index" : 0,
